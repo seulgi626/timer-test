@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="images/weniv-logo.png" alt="weniv logo">
+    </header>
+    <main>
+        <h1>TIMER</h1>
+        <hr>
+        <article>
+            <div class="time-unit">
+                <span>HRS</span>
+                <input type="text" id="input-hrs" class="time-display" value="00" maxlength="2" inputmode="numeric">
+            </div>
+            <span class="colon"><img src="images/dot.png" alt=":"></span>
+            <div class="time-unit">
+                <span>MIN</span>
+                <input type="text" id="input-min" class="time-display" value="00" maxlength="2" inputmode="numeric">
+            </div>
+            <span class="colon"><img src="images/dot.png" alt=":"></span>
+            <div class="time-unit">
+                <span>SEC</span>
+                <input type="text" id="input-sec" class="time-display" value="00" maxlength="2" inputmode="numeric">
+            </div>
+        </article>
+        <div class="btn-group">
+            <button type="button" id="btn-start" disabled>
+                <img src="images/icon-start-disabled.png" alt="" class="btn-icon">
+                <span class="btn-label">START</span>
+            </button>
+            <button type="button" id="btn-reset" disabled>
+                <img src="images/icon-reset-disabled.png" alt="" class="btn-icon">
+                <span class="btn-label">RESET</span>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <small>&copy; WENIV CORP.</small>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
